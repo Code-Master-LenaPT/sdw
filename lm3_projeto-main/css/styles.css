@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #C3DAC6;
+    color: #010C0E;
+}
+
+p {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+#logo {
+    font-size: 2rem;
+    font-family: 'Major Mono Display', monospace;
+    margin: auto;
+    position: relative;
+    left: 24px;
+    z-index: 20;
+    text-decoration: none;
+    color: #010C0E;
+}
+
+
+/* NAV */
+
+nav {
+    text-align: center;
+    background: rgba(253, 250, 250, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    position: relative;
+    z-index: 10;
+    border-radius: 2px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(195, 218, 198, 0.2);
+}
+
+nav ul li.menu-item {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li.menu-item.show {
+    display: block;
+    background-color: rgba(253, 250, 250, 0.8);
+    padding: 10px;
+}
+
+.navbar-toggler {
+    border: unset !important;
+    border-radius: unset !important;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: unset !important;
+}
+
+nav .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(253, 250, 250, 0.8);
+    display: none;
+}
+
+nav .navbar-collapse.show {
+    display: block;
+}
+
+nav .navbar-collapse {
+    transition: all 0.4s ease-in-out;
+}
+
+
+/* MENU */
+
+.menu_outros {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.5rem;
+    color: #010C0E;
+    text-decoration: none;
+}
+
+.menu_outros:hover {
+    color: #010C0E;
+}
+
+#botao_menu {
+    z-index: 20;
+}
+
+#menu_principal {
+    font-size: 2.5rem;
+    font-family: 'Major Mono Display', monospace;
+}
+
+
+/*MAIN*/
+
+main {
+    display: flex;
+    justify-content: center;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+
+/*FOOTER*/
+
+footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    color: #010C0E;
+    background: #FDFAFA;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.button_subscreve {
+    font-size: 1.125rem;
+    width: 6vw;
+    height: 4vh;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    color: #FDFAFA;
+    background-color: #7B9858;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    box-shadow: 0px 10px 20px rgba(88, 91, 152, 0.2);
+    color: #585B98;
+    background-color: #FDFAFA;
+}
+
+.input {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* TYPOGRAPHY */
+
+.heading_footer {
+    font-size: 2rem
+}
+
+.fourteen_px {
+    font-size: 0.875rem;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+
+/* ARTICLES */
+#articles {
+    text-align: center;
+}
+
+.articles_row {
+    display: grid;
+    grid-template-columns: repeat(3, 30rem);
+}
+
+.col-12 {
+    width: 300px;
+    height: 400px;
+}
+
+.col-12 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.col-12 a, .col-12 p {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+
+/*PARALLAX CENA 01*/
+
+/*#aviao {
+    background-image: url("../imgs/01/aviao.png");
+    height: 100%;
+}*/
+
+#parte_um {
+    background-image: url("../imgs/01/background.png");
+    background-repeat: repeat-y;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 200vh;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#telemovel {
+    background-image: url("../imgs/01/telemovel.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
